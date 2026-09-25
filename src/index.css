@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-canvas: #F5F3EE;
+  --color-editorial: #111111;
+  --color-neon: #DFFF00;
+  --color-line: #E5E2DA;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F3EE;
+  color: #111111;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F3EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DFFF00;
+}
+
+/* Streetwear utility styles */
+.editorial-border {
+  border-color: #E5E2DA;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px currentColor;
+  color: transparent;
+}
+
+.text-stroke-thick {
+  -webkit-text-stroke: 2px #111111;
+  color: transparent;
+}
+
+/* Grain texture overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(0,0,0,0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Smooth transitions */
+* {
+  box-sizing: border-box;
+}
